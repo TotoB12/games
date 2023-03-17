@@ -1,8 +1,3 @@
-//
-// Hello there!
-//
-// If you want to add my games to your site, please reach out at my email: echo-the-coder@tuta.io, or discord: 3kh0_#6969, Thanks and have a great day!
-
 // Wondering how this works?
 // This JavaScript code begins with a console warning message that asks users to reach out via email if they want to add the creator's games to their website. The second part of the code defines a function called "script" that logs an informational message to the console when it is called. The rest of the code creates four separate script tags and adds them to the head of the HTML document. Each script tag has different attributes and sources, and is appended with the script function. The first script tag is for Google Tag Manager, the second is for the Arc.io widget, the third is for ad handling using Google Funding Choices, and the fourth is for Google AdSense. Each script is added to the page asynchronously for performance reasons.
 
