@@ -7,7 +7,8 @@ async function isBlocked(url) {
   try {
     var README = await fetch(url + '/README.md');
     var content = await README.text();
-    if (content.startsWith('# TotoB12 Game Assets')) {
+    if (content.startsWith('totob12')) {
+//  if (content.startsWith('# TotoB12 Game Assets')) {
       // The CDN is not blocked
       return false;
     } else {
