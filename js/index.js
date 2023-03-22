@@ -1,13 +1,13 @@
 // Hello epic hacker (maybe skid) you are looking at one of the many scripts that powers the site, this script has extra comments and info to help you understand what is going on.
 
-// The code sets up several variables and functions that are used to fetch data from the server, manipulate the document's content, and create custom HTML elements. The isBlocked function checks if a URL is blocked by fetching the content of its README.md file and returning true if it does not start with "# 3kh0 Assets", or if there is an error while fetching the file. The getCDN function iterates through a list of CDN URLs, calls isBlocked on each of them, and returns the first URL that is not blocked, or the first URL in the list if they are all blocked. The rest of the code sets up various event listeners and HTML elements, loads the main.js file, and sets the website's theme and theme colors based on values in local storage. The code is mostly concerned with setting up the website's initial state and is executed when the website loads.
+// The code sets up several variables and functions that are used to fetch data from the server, manipulate the document's content, and create custom HTML elements. The isBlocked function checks if a URL is blocked by fetching the content of its README.md file and returning true if it does not start with "# TotoB12 Game Assets", or if there is an error while fetching the file. The getCDN function iterates through a list of CDN URLs, calls isBlocked on each of them, and returns the first URL that is not blocked, or the first URL in the list if they are all blocked. The rest of the code sets up various event listeners and HTML elements, loads the main.js file, and sets the website's theme and theme colors based on values in local storage. The code is mostly concerned with setting up the website's initial state and is executed when the website loads.
 
 // Checks if a CDN is blocked by testing the README.md file
 async function isBlocked(url) {
   try {
     var README = await fetch(url + '/README.md');
     var content = await README.text();
-    if (content.startsWith('# 3kh0 Assets')) {
+    if (content.startsWith('# TotoB12 Game Assets')) {
       // The CDN is not blocked
       return false;
     } else {
@@ -74,7 +74,7 @@ window.onerror = (e) => {
 
 // Add the main script in the <head> tags
 const jsdelivr = document.createElement('script');
-jsdelivr.setAttribute('src', 'https://cdn.jsdelivr.net/gh/3kh0/3kh0.github.io/js/main.js');
+jsdelivr.setAttribute('src', 'https://cdn.jsdelivr.net/gh/TotoB12/games/js/main.js');
 document.head.append(jsdelivr);
 
 // Collect Tab Cloak data from local storage
